@@ -3,6 +3,11 @@
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <configuration>
+    <runtime>
+        <loadFromRemoteSources enabled="true"/>
+    </runtime>
+    </configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D2EBB56F-323A-48A4-BB19-67483F33B21E}</ProjectGuid>
     <OutputType>Library</OutputType>
