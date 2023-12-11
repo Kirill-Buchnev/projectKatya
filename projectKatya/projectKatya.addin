@@ -1,0 +1,10 @@
+<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>projectKatya</Name>
+        <Assembly>projectKatya/projectKatya.dll</Assembly>
+        <FullClassName>projectKatya.Application</FullClassName>
+        <AddInId>187ADC24-8985-4775-ABA8-A17AB55F6785</AddInId>
+        <VendorId>Kirill</VendorId>
+        <VendorDescription>Kirill, www.github.com/Kirill-Buchnev</VendorDescription>
+    </AddIn>
+</RevitAddIns>
