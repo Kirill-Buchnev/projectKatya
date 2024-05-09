@@ -16,7 +16,7 @@ namespace projectKatya.Commands
             var activeView = doc.ActiveView;
             var finishingWalls = new FilteredElementCollector(doc, activeView.Id)
                                 .OfCategory(BuiltInCategory.OST_Walls)
-                                .WhereElementIsNotElementType().ToElements().Cast<Wall>()
+                                .WhereElementIsNotElementType().ToElements().Where(el => el is Wall).Cast<Wall>()
                                 .Where(wall => wall.WallType?.get_Parameter(BuiltInParameter.WALL_ATTR_WIDTH_PARAM)?.AsDouble() * 304.8 <= 40 
                                 && wall.WallType?.get_Parameter(BuiltInParameter.WALL_ATTR_WIDTH_PARAM)?.AsDouble() * 304.8 != 0);
             if (finishingWalls.ToList().Count() != 0)

@@ -18,7 +18,7 @@ namespace projectKatya
 
             var wallBoundariesBtn = CreateButton(
             panel: testRibbonPanel,
-            name: "WallBoundaries",
+            name: "Снять границы",
             text: "Снимает границу помещений со стен отделки",
             assemblyPath: pluginsFolder + PlaceHolders + PluginFormat,
             fullExecuteClassName: PlaceHolders + ".Commands.WallBoundariesCommand",
@@ -26,11 +26,11 @@ namespace projectKatya
 
             var commandInProgressBtn = CreateButton(
             panel: testRibbonPanel,
-            name: "CommandInProgress",
-            text: "Команда находится в разработке",
+            name: "Молдинг",
+            text: "Построение молдинга",
             assemblyPath: pluginsFolder + PlaceHolders + PluginFormat,
-            fullExecuteClassName: PlaceHolders + ".Commands.InProgressCommand",
-            imageName: "Icons/WallJoin.ico");
+            fullExecuteClassName: PlaceHolders + ".Commands.MoldingCommand",
+            imageName: "Icons/Molding.ico");
 
             return Result.Succeeded;
         }

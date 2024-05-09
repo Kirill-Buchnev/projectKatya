@@ -52,12 +52,17 @@
   <ItemGroup>
     <Compile Include="CommonViewService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\FamilyLoadService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Views\Resources\Icons\test1.ico" />
-    <Resource Include="Views\Resources\Icons\test2.ico" />
     <Resource Include="Views\Resources\Icons\wallBoundaries.ico" />
     <Resource Include="Views\Resources\Icons\WallJoin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Resources\Icons\Molding.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Families\Молдинг_Профиль 40х19.rfa" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

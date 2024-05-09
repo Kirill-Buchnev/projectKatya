@@ -4,9 +4,9 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <configuration>
-    <runtime>
-        <loadFromRemoteSources enabled="true"/>
-    </runtime>
+      <runtime>
+        <loadFromRemoteSources enabled="true" />
+      </runtime>
     </configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D2EBB56F-323A-48A4-BB19-67483F33B21E}</ProjectGuid>
@@ -57,10 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
+    <Compile Include="Commands\MoldingCommand.cs" />
     <Compile Include="Commands\InProgressCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Commands\WallBoundariesCommand.cs" />
-    <Compile Include="Commands\WallJoinCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\projectKatya.Revit.Shared\projectKatya.Revit.Shared.csproj">
